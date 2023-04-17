@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */; };
+		1FD55E4129EDA64300E4DAAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E4029EDA64300E4DAAC /* ContentView.swift */; };
+		1FD55E4329EDA64500E4DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4229EDA64500E4DAAC /* Assets.xcassets */; };
+		1FD55E4629EDA64500E4DAAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */; };
+		1FD55E4829EDA64500E4DAAC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E4729EDA64500E4DAAC /* Persistence.swift */; };
+		1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */; };
+		1FD55E5529EDA64600E4DAAC /* BliptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E5429EDA64600E4DAAC /* BliptTests.swift */; };
+		1FD55E5F29EDA64600E4DAAC /* BliptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E5E29EDA64600E4DAAC /* BliptUITests.swift */; };
+		1FD55E6129EDA64600E4DAAC /* BliptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E6029EDA64600E4DAAC /* BliptUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FD55E5129EDA64600E4DAAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FD55E3329EDA64300E4DAAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD55E3A29EDA64300E4DAAC;
+			remoteInfo = Blipt;
+		};
+		1FD55E5B29EDA64600E4DAAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FD55E3329EDA64300E4DAAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD55E3A29EDA64300E4DAAC;
+			remoteInfo = Blipt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FD55E3B29EDA64300E4DAAC /* Blipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptApp.swift; sourceTree = "<group>"; };
+		1FD55E4029EDA64300E4DAAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FD55E4229EDA64500E4DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FD55E4729EDA64500E4DAAC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1FD55E4A29EDA64500E4DAAC /* Blipt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blipt.xcdatamodel; sourceTree = "<group>"; };
+		1FD55E5029EDA64600E4DAAC /* BliptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BliptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD55E5429EDA64600E4DAAC /* BliptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptTests.swift; sourceTree = "<group>"; };
+		1FD55E5A29EDA64600E4DAAC /* BliptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BliptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD55E5E29EDA64600E4DAAC /* BliptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptUITests.swift; sourceTree = "<group>"; };
+		1FD55E6029EDA64600E4DAAC /* BliptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FD55E3829EDA64300E4DAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E4D29EDA64600E4DAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E5729EDA64600E4DAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FD55E3229EDA64300E4DAAC = {
+			isa = PBXGroup;
+			children = (
+				1FD55E3D29EDA64300E4DAAC /* Blipt */,
+				1FD55E5329EDA64600E4DAAC /* BliptTests */,
+				1FD55E5D29EDA64600E4DAAC /* BliptUITests */,
+				1FD55E3C29EDA64300E4DAAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FD55E3C29EDA64300E4DAAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E3B29EDA64300E4DAAC /* Blipt.app */,
+				1FD55E5029EDA64600E4DAAC /* BliptTests.xctest */,
+				1FD55E5A29EDA64600E4DAAC /* BliptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FD55E3D29EDA64300E4DAAC /* Blipt */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */,
+				1FD55E4029EDA64300E4DAAC /* ContentView.swift */,
+				1FD55E4229EDA64500E4DAAC /* Assets.xcassets */,
+				1FD55E4729EDA64500E4DAAC /* Persistence.swift */,
+				1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */,
+				1FD55E4429EDA64500E4DAAC /* Preview Content */,
+			);
+			path = Blipt;
+			sourceTree = "<group>";
+		};
+		1FD55E4429EDA64500E4DAAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FD55E5329EDA64600E4DAAC /* BliptTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E5429EDA64600E4DAAC /* BliptTests.swift */,
+			);
+			path = BliptTests;
+			sourceTree = "<group>";
+		};
+		1FD55E5D29EDA64600E4DAAC /* BliptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E5E29EDA64600E4DAAC /* BliptUITests.swift */,
+				1FD55E6029EDA64600E4DAAC /* BliptUITestsLaunchTests.swift */,
+			);
+			path = BliptUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FD55E3A29EDA64300E4DAAC /* Blipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD55E6429EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "Blipt" */;
+			buildPhases = (
+				1FD55E3729EDA64300E4DAAC /* Sources */,
+				1FD55E3829EDA64300E4DAAC /* Frameworks */,
+				1FD55E3929EDA64300E4DAAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blipt;
+			productName = Blipt;
+			productReference = 1FD55E3B29EDA64300E4DAAC /* Blipt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FD55E4F29EDA64600E4DAAC /* BliptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD55E6729EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "BliptTests" */;
+			buildPhases = (
+				1FD55E4C29EDA64600E4DAAC /* Sources */,
+				1FD55E4D29EDA64600E4DAAC /* Frameworks */,
+				1FD55E4E29EDA64600E4DAAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FD55E5229EDA64600E4DAAC /* PBXTargetDependency */,
+			);
+			name = BliptTests;
+			productName = BliptTests;
+			productReference = 1FD55E5029EDA64600E4DAAC /* BliptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FD55E5929EDA64600E4DAAC /* BliptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD55E6A29EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "BliptUITests" */;
+			buildPhases = (
+				1FD55E5629EDA64600E4DAAC /* Sources */,
+				1FD55E5729EDA64600E4DAAC /* Frameworks */,
+				1FD55E5829EDA64600E4DAAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FD55E5C29EDA64600E4DAAC /* PBXTargetDependency */,
+			);
+			name = BliptUITests;
+			productName = BliptUITests;
+			productReference = 1FD55E5A29EDA64600E4DAAC /* BliptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FD55E3329EDA64300E4DAAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1FD55E3A29EDA64300E4DAAC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1FD55E4F29EDA64600E4DAAC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1FD55E3A29EDA64300E4DAAC;
+					};
+					1FD55E5929EDA64600E4DAAC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1FD55E3A29EDA64300E4DAAC;
+					};
+				};
+			};
+			buildConfigurationList = 1FD55E3629EDA64300E4DAAC /* Build configuration list for PBXProject "Blipt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FD55E3229EDA64300E4DAAC;
+			productRefGroup = 1FD55E3C29EDA64300E4DAAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FD55E3A29EDA64300E4DAAC /* Blipt */,
+				1FD55E4F29EDA64600E4DAAC /* BliptTests */,
+				1FD55E5929EDA64600E4DAAC /* BliptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FD55E3929EDA64300E4DAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD55E4629EDA64500E4DAAC /* Preview Assets.xcassets in Resources */,
+				1FD55E4329EDA64500E4DAAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E4E29EDA64600E4DAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E5829EDA64600E4DAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FD55E3729EDA64300E4DAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD55E4829EDA64500E4DAAC /* Persistence.swift in Sources */,
+				1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */,
+				1FD55E4129EDA64300E4DAAC /* ContentView.swift in Sources */,
+				1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E4C29EDA64600E4DAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD55E5529EDA64600E4DAAC /* BliptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD55E5629EDA64600E4DAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD55E6129EDA64600E4DAAC /* BliptUITestsLaunchTests.swift in Sources */,
+				1FD55E5F29EDA64600E4DAAC /* BliptUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FD55E5229EDA64600E4DAAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FD55E3A29EDA64300E4DAAC /* Blipt */;
+			targetProxy = 1FD55E5129EDA64600E4DAAC /* PBXContainerItemProxy */;
+		};
+		1FD55E5C29EDA64600E4DAAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FD55E3A29EDA64300E4DAAC /* Blipt */;
+			targetProxy = 1FD55E5B29EDA64600E4DAAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FD55E6229EDA64600E4DAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FD55E6329EDA64600E4DAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FD55E6529EDA64600E4DAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blipt/Preview Content\"";
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.Blipt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FD55E6629EDA64600E4DAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blipt/Preview Content\"";
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.Blipt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FD55E6829EDA64600E4DAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.BliptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blipt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blipt";
+			};
+			name = Debug;
+		};
+		1FD55E6929EDA64600E4DAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.BliptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blipt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blipt";
+			};
+			name = Release;
+		};
+		1FD55E6B29EDA64600E4DAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.BliptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blipt;
+			};
+			name = Debug;
+		};
+		1FD55E6C29EDA64600E4DAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 889ZT45J94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.BliptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blipt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FD55E3629EDA64300E4DAAC /* Build configuration list for PBXProject "Blipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD55E6229EDA64600E4DAAC /* Debug */,
+				1FD55E6329EDA64600E4DAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD55E6429EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "Blipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD55E6529EDA64600E4DAAC /* Debug */,
+				1FD55E6629EDA64600E4DAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD55E6729EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "BliptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD55E6829EDA64600E4DAAC /* Debug */,
+				1FD55E6929EDA64600E4DAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD55E6A29EDA64600E4DAAC /* Build configuration list for PBXNativeTarget "BliptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD55E6B29EDA64600E4DAAC /* Debug */,
+				1FD55E6C29EDA64600E4DAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FD55E4A29EDA64500E4DAAC /* Blipt.xcdatamodel */,
+			);
+			currentVersion = 1FD55E4A29EDA64500E4DAAC /* Blipt.xcdatamodel */;
+			path = Blipt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FD55E3329EDA64300E4DAAC /* Project object */;
+}
