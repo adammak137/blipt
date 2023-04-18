@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct BliptApp: App {
-    let persistenceController = PersistenceController.shared
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
+  var body: some Scene {
+    WindowGroup {
+      SplitBillView(viewModel: .stub)
     }
+  }
 }
