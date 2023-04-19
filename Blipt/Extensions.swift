@@ -6,6 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+import NumberTextField
+
+extension String {
+    var isBlank: Bool {
+        return allSatisfy({ $0.isWhitespace })
+    }
+}
 
 extension Array {
     public subscript(safeIndex index: Int) -> Element? {
@@ -29,4 +37,22 @@ extension Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
+}
+
+
+extension NumberFormatter {
+  static var currency: NumberFormatter {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.locale = Locale.current
+    formatter.maximumFractionDigits = 2
+    formatter.minimumFractionDigits = 0
+    return formatter
+  }
+}
+
+extension NumberTextField {
+  init(_ placeholder: String, value: Binding<Decimal?>) {
+    self.init(placeholder: placeholder, value: value, formatter: .currency, isActive: .constant(true)) { _ in }
+  }
 }

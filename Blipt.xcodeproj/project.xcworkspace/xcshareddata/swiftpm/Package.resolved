@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "numbertextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikeCenters/NumberTextField",
+      "state" : {
+        "revision" : "28f88883e27f190e855b2825ac7c35eac532e20a",
+        "version" : "0.3.2"
+      }
+    }
+  ],
+  "version" : 2
+}

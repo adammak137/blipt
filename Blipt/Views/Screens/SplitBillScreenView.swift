@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SplitBillView: View {
+struct SplitBillScreenView: View {
   @ObservedObject var viewModel: SplitBillViewModel
   
   var body: some View {
@@ -51,9 +51,9 @@ struct SplitBillView: View {
   }
 }
 
-struct SplitBillView_Previews: PreviewProvider {
+struct SplitBillScreenView_Previews: PreviewProvider {
   static var previews: some View {
-    SplitBillView(viewModel: .stub)
-    SplitBillView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))
+    SplitBillScreenView(viewModel: .stub)
+    SplitBillScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))
   }
 }
