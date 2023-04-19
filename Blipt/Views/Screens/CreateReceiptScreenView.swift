@@ -13,6 +13,14 @@ struct CreateReceiptScreenView: View {
           items.removeAll(where: { $0.id == item.id })
         }
         AddItemForm(onAddTap: onAddFormSubmit)
+        
+        NavigationLink {
+          SplitBillScreenView(viewModel: .init(people: [], receipt: items))
+        } label: {
+          Text("Done")
+        }
+        
+        
       }
     }
   }
