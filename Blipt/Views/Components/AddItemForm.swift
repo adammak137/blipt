@@ -40,7 +40,6 @@ struct AddItemForm: View {
       }
     }
     .padding(.horizontal)
-    .navigationBarTitle("Add Receipt Item", displayMode: .inline)
   }
   
   private func onAddButtonTap() {

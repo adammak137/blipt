@@ -2,36 +2,32 @@ import SwiftUI
 import NumberTextField
 
 struct CreateReceiptScreenView: View {
-  @State private var receiptItems = [ReceiptItem]()
+  @State private var items = [ReceiptItem]()
+  
+  @State private var uniqueItemCount = 0
   
   var body: some View {
     NavigationView {
       VStack {
-        List(receiptItems) { item in
-          HStack {
-            Text(item.name)
-            Spacer()
-            Text("\(item.cost)")
-          }
+        ReceiptView(title: "Create Receipt", items: items) { item in
+          items.removeAll(where: { $0.id == item.id })
         }
-        AddItemForm { name, cost, quantity in
-          let itemCount: Int = receiptItems.count + 1
-          let items = (1...quantity).map { itemNumber in
-            ReceiptItem(
-              name: name ?? "Item #\(itemCount) (\(itemNumber) of \(quantity))",
-              cost: cost
-            )
-          }
-          receiptItems += items
-        }
+        AddItemForm(onAddTap: onAddFormSubmit)
       }
     }
   }
   
+  func onAddFormSubmit(name: String?, cost: Double, quantity: Int) {
+    uniqueItemCount += 1
+    items += (1...quantity).map { itemNumber in
+      ReceiptItem(
+        name: name ?? "Item #\(uniqueItemCount) (\(itemNumber) of \(quantity))",
+        cost: cost
+      )
+    }
+  }
+  
 }
-
-
-
 
 struct CreateReceiptScreenView_Previews: PreviewProvider {
   static var previews: some View {
