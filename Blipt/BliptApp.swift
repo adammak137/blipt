@@ -6,7 +6,7 @@ struct BliptApp: App {
     WindowGroup {
       ReceiptBuilderScreenView(items: []) { items in
         SplitBillScreenView(viewModel: .init(people: [], receipt: items)) { split in
-          FinalizedSplitView(split: split)
+          FinalizedSplitView(viewModel: .init(split: split))
         }
       }
     }

@@ -1,14 +1,8 @@
 import Foundation
 
-struct Price: Codable, Equatable {
+struct Price: Codable, Equatable, CustomStringConvertible {  
   var amount: Double
-}
-
-extension Price {
-  static let zero = Price(amount: 0)
-}
-
-extension Price: CustomStringConvertible {
+  
   var description: String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
@@ -18,3 +12,11 @@ extension Price: CustomStringConvertible {
     return formatter.string(from: number)!
   }
 }
+
+extension Price {
+  static let zero = Price(amount: 0)
+  static func +(lhs: Price, rhs: Price) -> Price {
+    return .init(amount: lhs.amount + rhs.amount)
+  }
+}
+
