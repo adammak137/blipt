@@ -38,7 +38,7 @@ class SplitBillViewModel: ObservableObject {
 
 // Stubbing
 extension SplitBillViewModel {
-  fileprivate convenience init() {
+  private convenience init() {
     let people: [Person] = .stub()
     self.init(people: people, receipt: .stub())
     items = people.reduce(into: [Person: [ReceiptItem]]()) { result, person in

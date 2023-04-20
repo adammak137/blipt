@@ -5,7 +5,13 @@ import UniformTypeIdentifiers
 struct ReceiptItem: Identifiable, Equatable, Codable {
   var id: UUID = .init()
   let name: String
-  let cost: Double
+  var cost: Double { price.amount }
+  let price: Price
+  
+  init(name: String, cost: Double) {
+    self.name = name
+    self.price = Price(amount: cost)
+  }
 }
 
 extension ReceiptItem {
@@ -25,7 +31,8 @@ extension Array where Element == ReceiptItem {
 
 extension ReceiptItem: Transferable {
   static let transferrableIdentifer: String = "com.baksha97.blipt.receiptitem"
+  static let transferrableContentType: UTType = UTType(exportedAs: transferrableIdentifer)
   static var transferRepresentation: some TransferRepresentation {
-    CodableRepresentation(contentType: UTType(exportedAs: transferrableIdentifer))
+    CodableRepresentation(contentType: transferrableContentType)
   }
 }

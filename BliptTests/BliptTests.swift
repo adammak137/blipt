@@ -9,28 +9,41 @@ import XCTest
 @testable import Blipt
 
 final class BliptTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  
+  //
+  //  func removeLeftmostInteger(from x: Double) -> Double {
+  //      let integerPart = Int(x)
+  //      let fractionalPart = x - Double(integerPart)
+  //      let decimalFraction = Decimal(fractionalPart)
+  //      let factor = pow(10, decimalFraction.scale)
+  //      let result = Double(truncating: (decimalFraction * Decimal(factor)).rounded()) / factor
+  //      return result
+  //  }
+  //
+  //
+  //
+  //  func testRemoveLeftmostInteger() {
+  //    XCTAssertEqual(removeLeftmostInteger(from: 1.0), 0.0)
+  //    XCTAssertEqual(removeLeftmostInteger(from: 1234.56), 234.56)
+  //    XCTAssertEqual(removeLeftmostInteger(from: 12.4), 2.4)
+  //    XCTAssertEqual(removeLeftmostInteger(from: 2.2), 0.2)
+  //    XCTAssertEqual(removeLeftmostInteger(from: 0.05), 0.0)
+  //    XCTAssertEqual(removeLeftmostInteger(from: 89.59), 0.59)
+  //  }
+  //
+  //}
+  //
+  //struct Price: Codable {
+  //  var amount: Double
+  //}
+  //extension Price: CustomStringConvertible {
+  //  var description: String {
+  //    let formatter = NumberFormatter()
+  //    formatter.numberStyle = .currency
+  //    formatter.maximumFractionDigits = 2
+  //
+  //    let number = NSNumber(value: amount)
+  //    return formatter.string(from: number)!
+  //  }
+  //}
 }

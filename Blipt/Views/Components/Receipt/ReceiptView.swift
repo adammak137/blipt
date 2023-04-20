@@ -13,6 +13,7 @@ struct ReceiptView: View {
   var body: some View {
     VStack(alignment: .leading) {
       Text(title)
+        .bold(true)
         .font(.title)
         .padding(.bottom)
       Divider()

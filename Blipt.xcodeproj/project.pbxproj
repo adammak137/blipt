@@ -23,9 +23,13 @@
 		1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */; };
 		1FD55E8229EE125B00E4DAAC /* ReceiptItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */; };
 		1FD55E8529EE193F00E4DAAC /* SplitBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */; };
-		1FD55E8729EE367600E4DAAC /* CreateReceiptScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8629EE367600E4DAAC /* CreateReceiptScreenView.swift */; };
-		1FE9F32C29EEDFEC0025D8D4 /* NumberTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 1FE9F32B29EEDFEC0025D8D4 /* NumberTextField */; };
+		1FD55E8729EE367600E4DAAC /* CreateReceiptFormScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8629EE367600E4DAAC /* CreateReceiptFormScreenView.swift */; };
 		1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */; };
+		1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */; };
+		1FE9F33629F1BAA60025D8D4 /* PersonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */; };
+		1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */; };
+		1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33C29F1C6990025D8D4 /* Price.swift */; };
+		1FE9F34029F1CF2E0025D8D4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +70,13 @@
 		1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemView.swift; sourceTree = "<group>"; };
 		1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItem.swift; sourceTree = "<group>"; };
 		1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBillViewModel.swift; sourceTree = "<group>"; };
-		1FD55E8629EE367600E4DAAC /* CreateReceiptScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReceiptScreenView.swift; sourceTree = "<group>"; };
+		1FD55E8629EE367600E4DAAC /* CreateReceiptFormScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReceiptFormScreenView.swift; sourceTree = "<group>"; };
 		1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemForm.swift; sourceTree = "<group>"; };
+		1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptBuilderScreenView.swift; sourceTree = "<group>"; };
+		1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputView.swift; sourceTree = "<group>"; };
+		1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		1FE9F33C29F1C6990025D8D4 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE9F32C29EEDFEC0025D8D4 /* NumberTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +127,8 @@
 		1FD55E3D29EDA64300E4DAAC /* Blipt */ = {
 			isa = PBXGroup;
 			children = (
+				1FE9F33E29F1CF210025D8D4 /* Navigation */,
+				1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */,
 				1FD55E8329EE193400E4DAAC /* ViewModels */,
 				1FD55E7C29EDF45800E4DAAC /* Info.plist */,
 				1FD55E7529EDDBF200E4DAAC /* Models */,
@@ -127,7 +137,6 @@
 				1FD55E4229EDA64500E4DAAC /* Assets.xcassets */,
 				1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */,
 				1FD55E4429EDA64500E4DAAC /* Preview Content */,
-				1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */,
 			);
 			path = Blipt;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 		1FD55E6F29EDDAEB00E4DAAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FE9F33929F1C3000025D8D4 /* Styles */,
 				1FD55E7229EDDB1100E4DAAC /* Screens */,
 				1FD55E7129EDDB0200E4DAAC /* Components */,
 				1FD55E7029EDDAFA00E4DAAC /* Shapes */,
@@ -178,9 +188,8 @@
 		1FD55E7129EDDB0200E4DAAC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1FD55E7829EDDE3A00E4DAAC /* PersonCardView.swift */,
-				1FD55E7A29EDE71300E4DAAC /* ReceiptView.swift */,
-				1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */,
+				1FE9F33829F1C17F0025D8D4 /* Receipt */,
+				1FE9F33729F1C1760025D8D4 /* Person */,
 				1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */,
 			);
 			path = Components;
@@ -190,7 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				1FD55E6D29EDA68200E4DAAC /* SplitBillScreenView.swift */,
-				1FD55E8629EE367600E4DAAC /* CreateReceiptScreenView.swift */,
+				1FD55E8629EE367600E4DAAC /* CreateReceiptFormScreenView.swift */,
+				1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -200,6 +210,7 @@
 			children = (
 				1FD55E7629EDDBFE00E4DAAC /* Person.swift */,
 				1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */,
+				1FE9F33C29F1C6990025D8D4 /* Price.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +221,40 @@
 				1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1FE9F33729F1C1760025D8D4 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */,
+				1FD55E7829EDDE3A00E4DAAC /* PersonCardView.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		1FE9F33829F1C17F0025D8D4 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E7A29EDE71300E4DAAC /* ReceiptView.swift */,
+				1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		1FE9F33929F1C3000025D8D4 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		1FE9F33E29F1CF210025D8D4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +274,6 @@
 			);
 			name = Blipt;
 			packageProductDependencies = (
-				1FE9F32B29EEDFEC0025D8D4 /* NumberTextField */,
 			);
 			productName = Blipt;
 			productReference = 1FD55E3B29EDA64300E4DAAC /* Blipt.app */;
@@ -304,7 +348,6 @@
 			);
 			mainGroup = 1FD55E3229EDA64300E4DAAC;
 			packageReferences = (
-				1FE9F32A29EEDFEC0025D8D4 /* XCRemoteSwiftPackageReference "NumberTextField" */,
 			);
 			productRefGroup = 1FD55E3C29EDA64300E4DAAC /* Products */;
 			projectDirPath = "";
@@ -353,14 +396,19 @@
 				1FD55E8529EE193F00E4DAAC /* SplitBillViewModel.swift in Sources */,
 				1FD55E8229EE125B00E4DAAC /* ReceiptItem.swift in Sources */,
 				1FD55E6E29EDA68200E4DAAC /* SplitBillScreenView.swift in Sources */,
+				1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */,
+				1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */,
 				1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */,
-				1FD55E8729EE367600E4DAAC /* CreateReceiptScreenView.swift in Sources */,
+				1FE9F34029F1CF2E0025D8D4 /* Coordinator.swift in Sources */,
+				1FD55E8729EE367600E4DAAC /* CreateReceiptFormScreenView.swift in Sources */,
 				1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */,
 				1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */,
 				1FD55E7729EDDBFE00E4DAAC /* Person.swift in Sources */,
 				1FD55E7429EDDB2500E4DAAC /* Plate.swift in Sources */,
 				1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */,
+				1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */,
 				1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */,
+				1FE9F33629F1BAA60025D8D4 /* PersonInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -501,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -687,25 +735,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1FE9F32A29EEDFEC0025D8D4 /* XCRemoteSwiftPackageReference "NumberTextField" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mikeCenters/NumberTextField";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1FE9F32B29EEDFEC0025D8D4 /* NumberTextField */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1FE9F32A29EEDFEC0025D8D4 /* XCRemoteSwiftPackageReference "NumberTextField" */;
-			productName = NumberTextField;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */ = {

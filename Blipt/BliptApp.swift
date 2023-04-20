@@ -4,8 +4,9 @@ import SwiftUI
 struct BliptApp: App {
   var body: some Scene {
     WindowGroup {
-      CreateReceiptScreenView()
-//      SplitBillScreenView(viewModel: .stub)
+      ReceiptBuilderScreenView(items: []) { items in
+        SplitBillScreenView(viewModel: .init(people: [], receipt: items))
+      }
     }
   }
 }

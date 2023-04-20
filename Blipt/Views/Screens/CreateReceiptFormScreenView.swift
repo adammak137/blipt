@@ -1,8 +1,7 @@
 import SwiftUI
-import NumberTextField
 
-struct CreateReceiptScreenView: View {
-  @State private var items = [ReceiptItem]()
+struct CreateReceiptFormScreenView: View {
+  @State var items: [ReceiptItem]
   
   @State private var uniqueItemCount = 0
   
@@ -45,6 +44,8 @@ struct CreateReceiptScreenView: View {
 
 struct CreateReceiptScreenView_Previews: PreviewProvider {
   static var previews: some View {
-    CreateReceiptScreenView()
+    CreateReceiptFormScreenView(
+      items: .stub()
+    )
   }
 }

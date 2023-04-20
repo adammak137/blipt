@@ -1,8 +1,12 @@
 import Foundation
 
 struct Person: Identifiable, Equatable, Hashable, Codable {
-  let id: UUID = .init()
-  let name: String
+  let id: UUID
+  let name: String  
+  init(name: String) {
+    self.id = .init()
+    self.name = name
+  }
 }
 
 extension Array where Element == Person {

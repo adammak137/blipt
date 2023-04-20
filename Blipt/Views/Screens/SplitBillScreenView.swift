@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct SplitBillScreenView: View {
+//  @ObservedObject var coordinator: Coordinator = .shared
   @ObservedObject var viewModel: SplitBillViewModel
   
   var body: some View {
@@ -15,6 +16,9 @@ struct SplitBillScreenView: View {
         }
         Divider()
         if !viewModel.receipt.isEmpty {
+          PersonInputView { name in
+            viewModel.add(person: .init(name: name))
+          }
           ReceiptView(
             title: "Remaining Items",
             items: viewModel.receipt,
@@ -25,7 +29,7 @@ struct SplitBillScreenView: View {
         } else {
           Button("Continue") {
             // TODO
-          }
+          }.fancyStyle()
         }
       }
     }

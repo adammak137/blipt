@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import NumberTextField
 
 extension String {
     var isBlank: Bool {
@@ -48,11 +47,5 @@ extension NumberFormatter {
     formatter.maximumFractionDigits = 2
     formatter.minimumFractionDigits = 0
     return formatter
-  }
-}
-
-extension NumberTextField {
-  init(_ placeholder: String, value: Binding<Decimal?>) {
-    self.init(placeholder: placeholder, value: value, formatter: .currency, isActive: .constant(true)) { _ in }
   }
 }
