@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FancyButtonStyle: ButtonStyle {
+struct AppButtonStyle: ButtonStyle {
   let backgroundColor: Color
   let foregroundColor: Color
   let cornerRadius: CGFloat
@@ -23,8 +23,8 @@ struct FancyButtonStyle: ButtonStyle {
 }
 
 extension Button {
-  func fancyStyle(backgroundColor: Color = Color.blue, foregroundColor: Color = Color.white, cornerRadius: CGFloat = 12) -> some View {
-    self.buttonStyle(FancyButtonStyle(backgroundColor: backgroundColor, foregroundColor: foregroundColor, cornerRadius: cornerRadius))
+  func appButtonStyle(backgroundColor: Color = Color.blue, foregroundColor: Color = Color.white, cornerRadius: CGFloat = 12) -> some View {
+    self.buttonStyle(AppButtonStyle(backgroundColor: backgroundColor, foregroundColor: foregroundColor, cornerRadius: cornerRadius))
   }
 }
 
@@ -37,14 +37,14 @@ struct FancyButtonStyle_Previews: PreviewProvider {
         }) {
           Text("Fancy Button")
         }
-        .fancyStyle()
+        .appButtonStyle()
         
         Button(action: {
           print("Another fancy button tapped!")
         }) {
           Text("Another Fancy Button")
         }
-        .fancyStyle(backgroundColor: Color(.systemIndigo), cornerRadius: 8)
+        .appButtonStyle(backgroundColor: Color(.systemIndigo), cornerRadius: 8)
       }
       .padding()
     }

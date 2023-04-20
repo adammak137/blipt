@@ -35,7 +35,7 @@ struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
     } label: {
       Text("Done")
         .frame(maxWidth: .infinity)
-    }.buttonStyle(FancyButtonStyle())
+    }.buttonStyle(AppButtonStyle())
   }
   
   var body: some View {
