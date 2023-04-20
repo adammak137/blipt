@@ -1,36 +1,57 @@
 import SwiftUI
 
-struct SplitBillScreenView: View {
-//  @ObservedObject var coordinator: Coordinator = .shared
+struct SplitBillScreenView<Destination>: View where Destination : View {
+  
+  typealias SplitBillContentDestination = ([Person: [ReceiptItem]]) -> Destination
+  let destination: SplitBillContentDestination
+  
   @ObservedObject var viewModel: SplitBillViewModel
+  
+  init(viewModel: SplitBillViewModel,
+       @ViewBuilder destination: @escaping SplitBillContentDestination) {
+    self.viewModel = viewModel
+    self.destination = destination
+  }
+  
+  @ViewBuilder
+  var listOfPeopleView: some View {
+    ScrollView {
+      ForEach(
+        viewModel.items.sorted(by: { $0.key.name < $1.key.name }),
+        id: \.key,
+        content: buildNavigationCard
+      )
+    }
+  }
+  
+  @ViewBuilder
+  var activeActionRequiredView: some View {
+    if !viewModel.receipt.isEmpty {
+      PersonInputView { name in
+        viewModel.add(person: .init(name: name))
+      }
+      ReceiptView(
+        title: "Remaining Items",
+        items: viewModel.receipt,
+        onItemDeleteSwipe: { item in
+          viewModel.remove(item: item)
+        }
+      )
+    } else {
+      NavigationLink {
+        destination(viewModel.items)
+      } label: {
+        Text("Next")
+      }
+    }
+  }
   
   var body: some View {
     NavigationStack {
       VStack {
-        ScrollView {
-          ForEach(
-            viewModel.items.sorted(by: { $0.key.name < $1.key.name }),
-            id: \.key,
-            content: buildNavigationCard
-          )
-        }
+        listOfPeopleView
         Divider()
-        if !viewModel.receipt.isEmpty {
-          PersonInputView { name in
-            viewModel.add(person: .init(name: name))
-          }
-          ReceiptView(
-            title: "Remaining Items",
-            items: viewModel.receipt,
-            onItemDeleteSwipe: { item in
-              viewModel.remove(item: item)
-            }
-          )
-        } else {
-          Button("Continue") {
-            // TODO
-          }.fancyStyle()
-        }
+        activeActionRequiredView
       }
     }
   }
@@ -57,7 +78,11 @@ struct SplitBillScreenView: View {
 
 struct SplitBillScreenView_Previews: PreviewProvider {
   static var previews: some View {
-    SplitBillScreenView(viewModel: .stub)
-    SplitBillScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))
+    SplitBillScreenView(viewModel: .stub) {
+      Text("Preview of next screen with content: \(String(describing: $0))")
+    }
+    SplitBillScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))  {
+      Text("Preview of next screen with content: \(String(describing: $0))")
+    }
   }
 }

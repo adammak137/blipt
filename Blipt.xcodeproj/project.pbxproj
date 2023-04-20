@@ -29,7 +29,6 @@
 		1FE9F33629F1BAA60025D8D4 /* PersonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */; };
 		1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */; };
 		1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33C29F1C6990025D8D4 /* Price.swift */; };
-		1FE9F34029F1CF2E0025D8D4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +75,6 @@
 		1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputView.swift; sourceTree = "<group>"; };
 		1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
 		1FE9F33C29F1C6990025D8D4 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
-		1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +125,6 @@
 		1FD55E3D29EDA64300E4DAAC /* Blipt */ = {
 			isa = PBXGroup;
 			children = (
-				1FE9F33E29F1CF210025D8D4 /* Navigation */,
 				1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */,
 				1FD55E8329EE193400E4DAAC /* ViewModels */,
 				1FD55E7C29EDF45800E4DAAC /* Info.plist */,
@@ -247,14 +244,6 @@
 				1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */,
 			);
 			path = Styles;
-			sourceTree = "<group>";
-		};
-		1FE9F33E29F1CF210025D8D4 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				1FE9F33F29F1CF2E0025D8D4 /* Coordinator.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +388,6 @@
 				1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */,
 				1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */,
 				1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */,
-				1FE9F34029F1CF2E0025D8D4 /* Coordinator.swift in Sources */,
 				1FD55E8729EE367600E4DAAC /* CreateReceiptFormScreenView.swift in Sources */,
 				1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */,
 				1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */,
