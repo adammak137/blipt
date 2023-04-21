@@ -31,7 +31,7 @@
 		1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */; };
 		1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */; };
 		1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */; };
-		1FE9F34229F1E6550025D8D4 /* DebtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34129F1E6550025D8D4 /* DebtListView.swift */; };
+		1FE9F34229F1E6550025D8D4 /* DebtListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34129F1E6550025D8D4 /* DebtListScreenView.swift */; };
 		1FE9F34429F1F3C80025D8D4 /* DebtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */; };
 		1FE9F34829F2083B0025D8D4 /* DebtItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34729F2083B0025D8D4 /* DebtItemView.swift */; };
 /* End PBXBuildFile section */
@@ -82,7 +82,7 @@
 		1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptBuilderScreenView.swift; sourceTree = "<group>"; };
 		1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
 		1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
-		1FE9F34129F1E6550025D8D4 /* DebtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtListView.swift; sourceTree = "<group>"; };
+		1FE9F34129F1E6550025D8D4 /* DebtListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtListScreenView.swift; sourceTree = "<group>"; };
 		1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtViewModel.swift; sourceTree = "<group>"; };
 		1FE9F34729F2083B0025D8D4 /* DebtItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,13 +154,12 @@
 		1FD55E3D29EDA64300E4DAAC /* Blipt */ = {
 			isa = PBXGroup;
 			children = (
-				1FE9F34B29F216370025D8D4 /* Common */,
-				1FE9F34A29F216300025D8D4 /* Features */,
-				1FE9F34929F216290025D8D4 /* ReusableUI */,
 				1FD55E7C29EDF45800E4DAAC /* Info.plist */,
-				1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */,
 				1FD55E4229EDA64500E4DAAC /* Assets.xcassets */,
 				1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */,
+				1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */,
+				1FE9F34B29F216370025D8D4 /* Common */,
+				1FE9F34A29F216300025D8D4 /* Features */,
 				1FD55E4429EDA64500E4DAAC /* Preview Content */,
 			);
 			path = Blipt;
@@ -235,14 +234,14 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		1FE9F34929F216290025D8D4 /* ReusableUI */ = {
+		1FE9F34929F216290025D8D4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				1FD55E7029EDDAFA00E4DAAC /* Shapes */,
 				1FD55E7129EDDB0200E4DAAC /* Components */,
 				1FE9F33929F1C3000025D8D4 /* Styles */,
 			);
-			path = ReusableUI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		1FE9F34A29F216300025D8D4 /* Features */ = {
@@ -260,6 +259,7 @@
 			children = (
 				1F4363FA29F21C8A00E5E021 /* Extensions.swift */,
 				1F4363FB29F21C8A00E5E021 /* Models */,
+				1FE9F34929F216290025D8D4 /* UI */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */,
-				1FE9F34129F1E6550025D8D4 /* DebtListView.swift */,
+				1FE9F34129F1E6550025D8D4 /* DebtListScreenView.swift */,
 			);
 			path = DebtViewer;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 				1F43640429F21C8B00E5E021 /* Item.swift in Sources */,
 				1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */,
 				1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */,
-				1FE9F34229F1E6550025D8D4 /* DebtListView.swift in Sources */,
+				1FE9F34229F1E6550025D8D4 /* DebtListScreenView.swift in Sources */,
 				1FE9F34429F1F3C80025D8D4 /* DebtViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

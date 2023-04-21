@@ -36,14 +36,14 @@ class DebtViewModel: ObservableObject {
       Debt(
         person: person,
         items: items,
-        tip: calculateAmount(amountStringValue: totalTipAmount, items: items, allSubtotal: allSubtotal),
-        tax: calculateAmount(amountStringValue: totalTaxAmount, items: items, allSubtotal: allSubtotal)
+        tip: calculatePriceOwnedGivenTotal(totalTipAmount, items: items, allSubtotal: allSubtotal),
+        tax: calculatePriceOwnedGivenTotal(totalTaxAmount, items: items, allSubtotal: allSubtotal)
       )
     }
   }
   
-  private func calculateAmount(amountStringValue: String, items: [Item], allSubtotal: Price) -> Price {
-    guard let doubleValue = Double(amountStringValue) else { return .zero }
+  private func calculatePriceOwnedGivenTotal(_ aTotalStringValue: String, items: [Item], allSubtotal: Price) -> Price {
+    guard let doubleValue = Double(aTotalStringValue) else { return .zero }
     let price: Price = .from(doubleValue)
     return items.total / allSubtotal * price
   }

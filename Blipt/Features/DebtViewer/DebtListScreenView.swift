@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DebtListView: View {
+struct DebtListScreenView: View {
   
   @ObservedObject var viewModel: DebtViewModel
   
@@ -61,6 +61,6 @@ struct FinalizedSplitView_Previews: PreviewProvider {
       .generate(): .stub(),
       .generate(): .stub(),
     ]
-    DebtListView(viewModel: .init(split: split))
+    DebtListScreenView(viewModel: .init(split: split))
   }
 }

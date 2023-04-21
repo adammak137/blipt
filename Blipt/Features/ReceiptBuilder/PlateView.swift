@@ -11,7 +11,7 @@ struct PlateView: View {
         .frame(width: 80, height: 80)
         .foregroundColor(.gray)
       Text(cost.description)
-        .font(.system(size: 24))
+        .font(.headline)
         .padding()
     }
   }
