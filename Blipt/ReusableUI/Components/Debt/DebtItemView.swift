@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DebtView: View {
+struct DebtItemView: View {
   let debt: Debt
   
   var body: some View {
@@ -53,7 +53,7 @@ struct DebtView: View {
 
 struct DebtView_Previews: PreviewProvider {
   static var previews: some View {
-    DebtView(
+    DebtItemView(
       debt: Debt(
         person: .init(name: "Preview"),
         items: .stub(),

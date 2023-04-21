@@ -1,10 +1,3 @@
-//
-//  Extensions.swift
-//  Blipt
-//
-//  Created by Travis Baksh on 4/17/23.
-//
-
 import Foundation
 import SwiftUI
 

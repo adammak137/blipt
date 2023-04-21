@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReceiptItemView: View {
-  let item: ReceiptItem
+  let item: Item
   
   var body: some View {
     HStack {

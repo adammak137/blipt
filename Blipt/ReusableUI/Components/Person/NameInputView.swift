@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct PersonInputView: View {
-  typealias PersonInputViewCallback = (String) -> Void
+struct NameInputView: View {
+  typealias NameInputViewCallback = (String) -> Void
   
-  let callback: PersonInputViewCallback
+  let callback: NameInputViewCallback
   @State private var name = ""
   
   var body: some View {
@@ -26,6 +26,6 @@ struct PersonInputView: View {
 
 struct PersonInputView_Previews: PreviewProvider {
     static var previews: some View {
-      PersonInputView() { _ in }
+      NameInputView() { _ in }
     }
 }

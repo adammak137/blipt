@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PersonCardView: View {
   
-  typealias OnItemDropped = (ReceiptItem) -> ()
+  typealias OnItemDropped = (Item) -> ()
   
   @State private var isExpanded = false
   
   let person: Person
-  let items: [ReceiptItem]
+  let items: [Item]
   let onItemDroppedIn: OnItemDropped?
   
   var cashTotalDescription: String {
@@ -57,7 +57,7 @@ struct PersonCardView: View {
     .background(Color.white)
     .cornerRadius(10)
     .shadow(color: Color.gray.opacity(0.4), radius: 10, x: 0, y: 4)
-    .dropDestination(for: ReceiptItem.self) { items, location in
+    .dropDestination(for: Item.self) { items, location in
       guard let item = items.first else { return false }
       onItemDroppedIn?(item)
       return true

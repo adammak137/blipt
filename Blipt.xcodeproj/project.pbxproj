@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F43640029F21C8A00E5E021 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4363FA29F21C8A00E5E021 /* Extensions.swift */; };
+		1F43640129F21C8A00E5E021 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4363FC29F21C8A00E5E021 /* Debt.swift */; };
+		1F43640229F21C8A00E5E021 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4363FD29F21C8A00E5E021 /* Price.swift */; };
+		1F43640329F21C8B00E5E021 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4363FE29F21C8A00E5E021 /* Person.swift */; };
+		1F43640429F21C8B00E5E021 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4363FF29F21C8A00E5E021 /* Item.swift */; };
+		1F9276BE29F21DE500A5D8E8 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276BD29F21DE500A5D8E8 /* NumberPadView.swift */; };
+		1F9276C029F21E2B00A5D8E8 /* ItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276BF29F21E2B00A5D8E8 /* ItemTableView.swift */; };
+		1F9276C229F21E9F00A5D8E8 /* PlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276C129F21E9F00A5D8E8 /* PlateView.swift */; };
+		1F9276C529F2229D00A5D8E8 /* SnapGenTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9276C429F2229D00A5D8E8 /* SnapGenTesting */; };
 		1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */; };
 		1FD55E4329EDA64500E4DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4229EDA64500E4DAAC /* Assets.xcassets */; };
 		1FD55E4629EDA64500E4DAAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */; };
@@ -14,24 +23,18 @@
 		1FD55E5529EDA64600E4DAAC /* BliptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E5429EDA64600E4DAAC /* BliptTests.swift */; };
 		1FD55E5F29EDA64600E4DAAC /* BliptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E5E29EDA64600E4DAAC /* BliptUITests.swift */; };
 		1FD55E6129EDA64600E4DAAC /* BliptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E6029EDA64600E4DAAC /* BliptUITestsLaunchTests.swift */; };
-		1FD55E6E29EDA68200E4DAAC /* SplitBillScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E6D29EDA68200E4DAAC /* SplitBillScreenView.swift */; };
+		1FD55E6E29EDA68200E4DAAC /* ReceiptSplitterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E6D29EDA68200E4DAAC /* ReceiptSplitterScreenView.swift */; };
 		1FD55E7429EDDB2500E4DAAC /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7329EDDB2500E4DAAC /* Plate.swift */; };
-		1FD55E7729EDDBFE00E4DAAC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7629EDDBFE00E4DAAC /* Person.swift */; };
 		1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7829EDDE3A00E4DAAC /* PersonCardView.swift */; };
 		1FD55E7B29EDE71300E4DAAC /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7A29EDE71300E4DAAC /* ReceiptView.swift */; };
-		1FD55E7E29EDFC8000E4DAAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */; };
 		1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */; };
-		1FD55E8229EE125B00E4DAAC /* ReceiptItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */; };
-		1FD55E8529EE193F00E4DAAC /* SplitBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */; };
-		1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */; };
+		1FD55E8529EE193F00E4DAAC /* ReceiptSplitterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8429EE193F00E4DAAC /* ReceiptSplitterViewModel.swift */; };
 		1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */; };
-		1FE9F33629F1BAA60025D8D4 /* PersonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */; };
+		1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */; };
 		1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */; };
-		1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33C29F1C6990025D8D4 /* Price.swift */; };
-		1FE9F34229F1E6550025D8D4 /* FinalizedSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34129F1E6550025D8D4 /* FinalizedSplitView.swift */; };
-		1FE9F34429F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34329F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift */; };
-		1FE9F34629F207480025D8D4 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34529F207480025D8D4 /* Debt.swift */; };
-		1FE9F34829F2083B0025D8D4 /* DebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34729F2083B0025D8D4 /* DebtView.swift */; };
+		1FE9F34229F1E6550025D8D4 /* DebtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34129F1E6550025D8D4 /* DebtListView.swift */; };
+		1FE9F34429F1F3C80025D8D4 /* DebtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */; };
+		1FE9F34829F2083B0025D8D4 /* DebtItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34729F2083B0025D8D4 /* DebtItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F4363FA29F21C8A00E5E021 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1F4363FC29F21C8A00E5E021 /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		1F4363FD29F21C8A00E5E021 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		1F4363FE29F21C8A00E5E021 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1F4363FF29F21C8A00E5E021 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1F9276BD29F21DE500A5D8E8 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		1F9276BF29F21E2B00A5D8E8 /* ItemTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableView.swift; sourceTree = "<group>"; };
+		1F9276C129F21E9F00A5D8E8 /* PlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateView.swift; sourceTree = "<group>"; };
 		1FD55E3B29EDA64300E4DAAC /* Blipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptApp.swift; sourceTree = "<group>"; };
 		1FD55E4229EDA64500E4DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,25 +73,19 @@
 		1FD55E5A29EDA64600E4DAAC /* BliptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BliptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD55E5E29EDA64600E4DAAC /* BliptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptUITests.swift; sourceTree = "<group>"; };
 		1FD55E6029EDA64600E4DAAC /* BliptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FD55E6D29EDA68200E4DAAC /* SplitBillScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBillScreenView.swift; sourceTree = "<group>"; };
+		1FD55E6D29EDA68200E4DAAC /* ReceiptSplitterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSplitterScreenView.swift; sourceTree = "<group>"; };
 		1FD55E7329EDDB2500E4DAAC /* Plate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
-		1FD55E7629EDDBFE00E4DAAC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1FD55E7829EDDE3A00E4DAAC /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
 		1FD55E7A29EDE71300E4DAAC /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		1FD55E7C29EDF45800E4DAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemView.swift; sourceTree = "<group>"; };
-		1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItem.swift; sourceTree = "<group>"; };
-		1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBillViewModel.swift; sourceTree = "<group>"; };
-		1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemForm.swift; sourceTree = "<group>"; };
+		1FD55E8429EE193F00E4DAAC /* ReceiptSplitterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSplitterViewModel.swift; sourceTree = "<group>"; };
 		1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptBuilderScreenView.swift; sourceTree = "<group>"; };
-		1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInputView.swift; sourceTree = "<group>"; };
+		1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
 		1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
-		1FE9F33C29F1C6990025D8D4 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
-		1FE9F34129F1E6550025D8D4 /* FinalizedSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedSplitView.swift; sourceTree = "<group>"; };
-		1FE9F34329F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedSplitBillViewModel.swift; sourceTree = "<group>"; };
-		1FE9F34529F207480025D8D4 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
-		1FE9F34729F2083B0025D8D4 /* DebtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtView.swift; sourceTree = "<group>"; };
+		1FE9F34129F1E6550025D8D4 /* DebtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtListView.swift; sourceTree = "<group>"; };
+		1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtViewModel.swift; sourceTree = "<group>"; };
+		1FE9F34729F2083B0025D8D4 /* DebtItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9276C529F2229D00A5D8E8 /* SnapGenTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +114,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4363F329F21B9C00E5E021 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F4363FB29F21C8A00E5E021 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F4363FC29F21C8A00E5E021 /* Debt.swift */,
+				1F4363FD29F21C8A00E5E021 /* Price.swift */,
+				1F4363FE29F21C8A00E5E021 /* Person.swift */,
+				1F4363FF29F21C8A00E5E021 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1FD55E3229EDA64300E4DAAC = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +139,7 @@
 				1FD55E5329EDA64600E4DAAC /* BliptTests */,
 				1FD55E5D29EDA64600E4DAAC /* BliptUITests */,
 				1FD55E3C29EDA64300E4DAAC /* Products */,
+				1F4363F329F21B9C00E5E021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,11 +156,10 @@
 		1FD55E3D29EDA64300E4DAAC /* Blipt */ = {
 			isa = PBXGroup;
 			children = (
-				1FD55E7D29EDFC8000E4DAAC /* Extensions.swift */,
-				1FD55E8329EE193400E4DAAC /* ViewModels */,
+				1FE9F34B29F216370025D8D4 /* Common */,
+				1FE9F34A29F216300025D8D4 /* Features */,
+				1FE9F34929F216290025D8D4 /* ReusableUI */,
 				1FD55E7C29EDF45800E4DAAC /* Info.plist */,
-				1FD55E7529EDDBF200E4DAAC /* Models */,
-				1FD55E6F29EDDAEB00E4DAAC /* Views */,
 				1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */,
 				1FD55E4229EDA64500E4DAAC /* Assets.xcassets */,
 				1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */,
@@ -169,17 +193,6 @@
 			path = BliptUITests;
 			sourceTree = "<group>";
 		};
-		1FD55E6F29EDDAEB00E4DAAC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				1FE9F33929F1C3000025D8D4 /* Styles */,
-				1FD55E7229EDDB1100E4DAAC /* Screens */,
-				1FD55E7129EDDB0200E4DAAC /* Components */,
-				1FD55E7029EDDAFA00E4DAAC /* Shapes */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		1FD55E7029EDDAFA00E4DAAC /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,48 +204,17 @@
 		1FD55E7129EDDB0200E4DAAC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1FE9F34C29F216600025D8D4 /* Debt */,
 				1FE9F33829F1C17F0025D8D4 /* Receipt */,
 				1FE9F33729F1C1760025D8D4 /* Person */,
-				1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */,
-				1FE9F34729F2083B0025D8D4 /* DebtView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		1FD55E7229EDDB1100E4DAAC /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				1FD55E6D29EDA68200E4DAAC /* SplitBillScreenView.swift */,
-				1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */,
-				1FE9F34129F1E6550025D8D4 /* FinalizedSplitView.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		1FD55E7529EDDBF200E4DAAC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1FD55E7629EDDBFE00E4DAAC /* Person.swift */,
-				1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */,
-				1FE9F33C29F1C6990025D8D4 /* Price.swift */,
-				1FE9F34529F207480025D8D4 /* Debt.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1FD55E8329EE193400E4DAAC /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				1FD55E8429EE193F00E4DAAC /* SplitBillViewModel.swift */,
-				1FE9F34329F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		1FE9F33729F1C1760025D8D4 /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				1FE9F33529F1BAA60025D8D4 /* PersonInputView.swift */,
+				1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */,
 				1FD55E7829EDDE3A00E4DAAC /* PersonCardView.swift */,
 			);
 			path = Person;
@@ -255,6 +237,72 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		1FE9F34929F216290025D8D4 /* ReusableUI */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E7029EDDAFA00E4DAAC /* Shapes */,
+				1FD55E7129EDDB0200E4DAAC /* Components */,
+				1FE9F33929F1C3000025D8D4 /* Styles */,
+			);
+			path = ReusableUI;
+			sourceTree = "<group>";
+		};
+		1FE9F34A29F216300025D8D4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F34F29F216D10025D8D4 /* DebtViewer */,
+				1FE9F34E29F216BE0025D8D4 /* ReceiptSplitter */,
+				1FE9F34D29F216960025D8D4 /* ReceiptBuilder */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1FE9F34B29F216370025D8D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F4363FA29F21C8A00E5E021 /* Extensions.swift */,
+				1F4363FB29F21C8A00E5E021 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1FE9F34C29F216600025D8D4 /* Debt */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F34729F2083B0025D8D4 /* DebtItemView.swift */,
+			);
+			path = Debt;
+			sourceTree = "<group>";
+		};
+		1FE9F34D29F216960025D8D4 /* ReceiptBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */,
+				1F9276BD29F21DE500A5D8E8 /* NumberPadView.swift */,
+				1F9276BF29F21E2B00A5D8E8 /* ItemTableView.swift */,
+				1F9276C129F21E9F00A5D8E8 /* PlateView.swift */,
+			);
+			path = ReceiptBuilder;
+			sourceTree = "<group>";
+		};
+		1FE9F34E29F216BE0025D8D4 /* ReceiptSplitter */ = {
+			isa = PBXGroup;
+			children = (
+				1FD55E8429EE193F00E4DAAC /* ReceiptSplitterViewModel.swift */,
+				1FD55E6D29EDA68200E4DAAC /* ReceiptSplitterScreenView.swift */,
+			);
+			path = ReceiptSplitter;
+			sourceTree = "<group>";
+		};
+		1FE9F34F29F216D10025D8D4 /* DebtViewer */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9F34329F1F3C80025D8D4 /* DebtViewModel.swift */,
+				1FE9F34129F1E6550025D8D4 /* DebtListView.swift */,
+			);
+			path = DebtViewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +320,7 @@
 			);
 			name = Blipt;
 			packageProductDependencies = (
+				1F9276C429F2229D00A5D8E8 /* SnapGenTesting */,
 			);
 			productName = Blipt;
 			productReference = 1FD55E3B29EDA64300E4DAAC /* Blipt.app */;
@@ -346,6 +395,7 @@
 			);
 			mainGroup = 1FD55E3229EDA64300E4DAAC;
 			packageReferences = (
+				1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */,
 			);
 			productRefGroup = 1FD55E3C29EDA64300E4DAAC /* Products */;
 			projectDirPath = "";
@@ -390,25 +440,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FD55E7B29EDE71300E4DAAC /* ReceiptView.swift in Sources */,
-				1FD55E7E29EDFC8000E4DAAC /* Extensions.swift in Sources */,
-				1FD55E8529EE193F00E4DAAC /* SplitBillViewModel.swift in Sources */,
-				1FD55E8229EE125B00E4DAAC /* ReceiptItem.swift in Sources */,
-				1FD55E6E29EDA68200E4DAAC /* SplitBillScreenView.swift in Sources */,
-				1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */,
+				1F9276C029F21E2B00A5D8E8 /* ItemTableView.swift in Sources */,
+				1FD55E8529EE193F00E4DAAC /* ReceiptSplitterViewModel.swift in Sources */,
+				1FD55E6E29EDA68200E4DAAC /* ReceiptSplitterScreenView.swift in Sources */,
 				1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */,
+				1F43640129F21C8A00E5E021 /* Debt.swift in Sources */,
+				1F43640229F21C8A00E5E021 /* Price.swift in Sources */,
+				1F43640329F21C8B00E5E021 /* Person.swift in Sources */,
+				1F9276BE29F21DE500A5D8E8 /* NumberPadView.swift in Sources */,
+				1F9276C229F21E9F00A5D8E8 /* PlateView.swift in Sources */,
 				1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */,
-				1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */,
 				1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */,
-				1FD55E7729EDDBFE00E4DAAC /* Person.swift in Sources */,
-				1FE9F34829F2083B0025D8D4 /* DebtView.swift in Sources */,
-				1FE9F34629F207480025D8D4 /* Debt.swift in Sources */,
+				1FE9F34829F2083B0025D8D4 /* DebtItemView.swift in Sources */,
 				1FD55E7429EDDB2500E4DAAC /* Plate.swift in Sources */,
 				1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */,
 				1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */,
+				1F43640029F21C8A00E5E021 /* Extensions.swift in Sources */,
+				1F43640429F21C8B00E5E021 /* Item.swift in Sources */,
 				1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */,
-				1FE9F33629F1BAA60025D8D4 /* PersonInputView.swift in Sources */,
-				1FE9F34229F1E6550025D8D4 /* FinalizedSplitView.swift in Sources */,
-				1FE9F34429F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift in Sources */,
+				1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */,
+				1FE9F34229F1E6550025D8D4 /* DebtListView.swift in Sources */,
+				1FE9F34429F1F3C80025D8D4 /* DebtViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +789,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/whiteio/SnapshotGen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F9276C429F2229D00A5D8E8 /* SnapGenTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */;
+			productName = SnapGenTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */ = {

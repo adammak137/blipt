@@ -5,8 +5,8 @@ struct BliptApp: App {
   var body: some Scene {
     WindowGroup {
       ReceiptBuilderScreenView(items: []) { items in
-        SplitBillScreenView(viewModel: .init(people: [], receipt: items)) { split in
-          FinalizedSplitView(viewModel: .init(split: split))
+        ReceiptSplitterScreenView(viewModel: .init(people: [], receipt: items)) { split in
+          DebtListView(viewModel: .init(split: split))
         }
       }
     }

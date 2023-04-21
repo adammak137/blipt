@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ReceiptView: View {
   
-  typealias OnItemDeleteSwipe = (ReceiptItem) -> ()
+  typealias OnItemDeleteSwipe = (Item) -> ()
   
   let title: String
-  let items: [ReceiptItem]
+  let items: [Item]
   let onItemDeleteSwipe: OnItemDeleteSwipe?
   
   var total: Double { items.map(\.cost).reduce(0, +) }

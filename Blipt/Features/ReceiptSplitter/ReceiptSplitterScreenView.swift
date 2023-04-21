@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct SplitBillScreenView<Destination>: View where Destination : View {
+struct ReceiptSplitterScreenView<Destination>: View where Destination : View {
   
-  typealias SplitBillContentDestination = ([Person: [ReceiptItem]]) -> Destination
+  typealias SplitBillContentDestination = ([Person: [Item]]) -> Destination
   let destination: SplitBillContentDestination
   
-  @ObservedObject var viewModel: SplitBillViewModel
+  @ObservedObject var viewModel: ReceiptSplitterViewModel
   
-  init(viewModel: SplitBillViewModel,
+  init(viewModel: ReceiptSplitterViewModel,
        @ViewBuilder destination: @escaping SplitBillContentDestination) {
     self.viewModel = viewModel
     self.destination = destination
@@ -27,7 +27,7 @@ struct SplitBillScreenView<Destination>: View where Destination : View {
   @ViewBuilder
   var activeActionRequiredView: some View {
     if !viewModel.receipt.isEmpty {
-      PersonInputView { name in
+      NameInputView { name in
         viewModel.add(person: .init(name: name))
       }
       ReceiptView(
@@ -56,7 +56,7 @@ struct SplitBillScreenView<Destination>: View where Destination : View {
     }
   }
   
-  func buildNavigationCard(person: Person, items: [ReceiptItem]) -> some View {
+  func buildNavigationCard(person: Person, items: [Item]) -> some View {
     NavigationLink {
       ReceiptView(
         title: "\(person.name)'s Items",
@@ -78,10 +78,10 @@ struct SplitBillScreenView<Destination>: View where Destination : View {
 
 struct SplitBillScreenView_Previews: PreviewProvider {
   static var previews: some View {
-    SplitBillScreenView(viewModel: .stub) {
+    ReceiptSplitterScreenView(viewModel: .stub) {
       Text("Preview of next screen with content: \(String(describing: $0))")
     }
-    SplitBillScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))  {
+    ReceiptSplitterScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))  {
       Text("Preview of next screen with content: \(String(describing: $0))")
     }
   }

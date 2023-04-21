@@ -1,11 +1,11 @@
 import Foundation
 
-class SplitBillViewModel: ObservableObject {
-  @Published var items: [Person: [ReceiptItem]]
-  @Published var receipt: [ReceiptItem]
+class ReceiptSplitterViewModel: ObservableObject {
+  @Published var items: [Person: [Item]]
+  @Published var receipt: [Item]
   
-  init(people: [Person], receipt: [ReceiptItem]) {
-    self.items = people.reduce(into: [Person: [ReceiptItem]]()) { $0[$1] = [] }
+  init(people: [Person], receipt: [Item]) {
+    self.items = people.reduce(into: [Person: [Item]]()) { $0[$1] = [] }
     self.receipt = receipt
   }
   
@@ -16,36 +16,36 @@ class SplitBillViewModel: ObservableObject {
     items[person] = []
   }
   
-  func add(item: ReceiptItem) {
+  func add(item: Item) {
     receipt.append(item)
   }
   
-  func remove(item: ReceiptItem) {
+  func remove(item: Item) {
     receipt.removeAll(where: { $0.id == item.id })
   }
   
-  func add(item: ReceiptItem, to person: Person) {
+  func add(item: Item, to person: Person) {
     add(person: person)
     items[person]?.append(item)
     remove(item: item)
   }
   
-  func remove(item: ReceiptItem, from person: Person) {
+  func remove(item: Item, from person: Person) {
     items[person]?.removeAll(where: { $0.id == item.id })
     add(item: item)
   }
 }
 
 // Stubbing
-extension SplitBillViewModel {
+extension ReceiptSplitterViewModel {
   private convenience init() {
     let people: [Person] = .stub()
     self.init(people: people, receipt: .stub())
-    items = people.reduce(into: [Person: [ReceiptItem]]()) { result, person in
+    items = people.reduce(into: [Person: [Item]]()) { result, person in
       result[person] = .stub()
     }
     receipt = .stub()
   }
   
-  static let stub: SplitBillViewModel = .init()
+  static let stub: ReceiptSplitterViewModel = .init()
 }

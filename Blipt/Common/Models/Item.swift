@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI // Transferable
 import UniformTypeIdentifiers
 
-struct ReceiptItem: Identifiable, Equatable, Codable {
+struct Item: Identifiable, Equatable, Codable {
   var id: UUID = .init()
   let name: String
   var cost: Double { price.amount }
@@ -14,22 +14,22 @@ struct ReceiptItem: Identifiable, Equatable, Codable {
   }
 }
 
-extension ReceiptItem {
-  static func generate() -> ReceiptItem {
+extension Item {
+  static func generate() -> Item {
     let names = ["Coffee", "Sandwich", "Salad", "Burger", "Pizza", "Soda", "Beer", "Wine", "Ice Cream", "Cake"]
     let name = names.randomElement() ?? "Unknown"
     let cost = Double.random(in: 1.0...20.0).rounded(toPlaces: 2)
-    return ReceiptItem(name: name, cost: cost)
+    return Item(name: name, cost: cost)
   }
 }
 
-extension Array where Element == ReceiptItem {
-  static func stub(in range: ClosedRange<Int> = 5...10) -> [ReceiptItem] {
-    (0..<Int.random(in: range)).map { _ in ReceiptItem.generate() }
+extension Array where Element == Item {
+  static func stub(in range: ClosedRange<Int> = 5...10) -> [Item] {
+    (0..<Int.random(in: range)).map { _ in Item.generate() }
   }
 }
 
-extension ReceiptItem: Transferable {
+extension Item: Transferable {
   static let transferrableIdentifer: String = "com.baksha97.blipt.receiptitem"
   static let transferrableContentType: UTType = UTType(exportedAs: transferrableIdentifer)
   static var transferRepresentation: some TransferRepresentation {

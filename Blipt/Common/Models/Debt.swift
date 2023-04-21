@@ -3,7 +3,7 @@ import Foundation
 struct Debt {
 
   let person: Person
-  let items: [ReceiptItem]
+  let items: [Item]
   let tip: Price
   let tax: Price
 

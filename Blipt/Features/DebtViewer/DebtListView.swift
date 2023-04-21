@@ -1,15 +1,24 @@
 import SwiftUI
 
-struct FinalizedSplitView: View {
+struct DebtListView: View {
   
-  @ObservedObject var viewModel: FinalizedSplitBillViewModel
+  @ObservedObject var viewModel: DebtViewModel
   
   var body: some View {
     NavigationView {
       VStack {
         Group {
           HStack {
+            Text("Subtotal")
+              .font(.headline)
+            Spacer()
+            Text("\(viewModel.allSubtotal.description)")
+              .font(.headline)
+          }.padding()
+          
+          HStack {
             Text("Total Tip Amount:")
+              .font(.headline)
             TextField("$0.00", text: $viewModel.totalTipAmount)
               .textFieldStyle(RoundedBorderTextFieldStyle())
               .keyboardType(.decimalPad)
@@ -18,15 +27,24 @@ struct FinalizedSplitView: View {
           
           HStack {
             Text("Total Tax Amount:")
+              .font(.headline)
             TextField("$0.00", text: $viewModel.totalTaxAmount)
               .textFieldStyle(RoundedBorderTextFieldStyle())
               .keyboardType(.decimalPad)
           }
           .padding()
+          
+          HStack {
+            Text("Grand Total")
+              .font(.headline)
+            Spacer()
+            Text("\(viewModel.grandTotal.description)")
+              .font(.headline)
+          }.padding()
         }
         
         List(viewModel.debts, id: \.person.id) { debt in
-          DebtView(debt: debt)
+          DebtItemView(debt: debt)
         }
         .listStyle(GroupedListStyle())
       }
@@ -37,12 +55,12 @@ struct FinalizedSplitView: View {
 
 struct FinalizedSplitView_Previews: PreviewProvider {
   static var previews: some View {
-    let person1 = Person(name: "Alice")
-    let person2 = Person(name: "Bob")
-    let split: [Person: [ReceiptItem]] = [
-      person1: .stub(),
-      person2: .stub()
+    let split: [Person: [Item]] = [
+      .generate(): .stub(),
+      .generate(): .stub(),
+      .generate(): .stub(),
+      .generate(): .stub(),
     ]
-    FinalizedSplitView(viewModel: .init(split: split))
+    DebtListView(viewModel: .init(split: split))
   }
 }
