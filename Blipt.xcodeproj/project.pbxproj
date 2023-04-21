@@ -15,7 +15,6 @@
 		1F9276BE29F21DE500A5D8E8 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276BD29F21DE500A5D8E8 /* NumberPadView.swift */; };
 		1F9276C029F21E2B00A5D8E8 /* ItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276BF29F21E2B00A5D8E8 /* ItemTableView.swift */; };
 		1F9276C229F21E9F00A5D8E8 /* PlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276C129F21E9F00A5D8E8 /* PlateView.swift */; };
-		1F9276C529F2229D00A5D8E8 /* SnapGenTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9276C429F2229D00A5D8E8 /* SnapGenTesting */; };
 		1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */; };
 		1FD55E4329EDA64500E4DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4229EDA64500E4DAAC /* Assets.xcassets */; };
 		1FD55E4629EDA64500E4DAAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */; };
@@ -93,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9276C529F2229D00A5D8E8 /* SnapGenTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +318,6 @@
 			);
 			name = Blipt;
 			packageProductDependencies = (
-				1F9276C429F2229D00A5D8E8 /* SnapGenTesting */,
 			);
 			productName = Blipt;
 			productReference = 1FD55E3B29EDA64300E4DAAC /* Blipt.app */;
@@ -395,7 +392,6 @@
 			);
 			mainGroup = 1FD55E3229EDA64300E4DAAC;
 			packageReferences = (
-				1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */,
 			);
 			productRefGroup = 1FD55E3C29EDA64300E4DAAC /* Products */;
 			projectDirPath = "";
@@ -789,25 +785,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/whiteio/SnapshotGen";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1F9276C429F2229D00A5D8E8 /* SnapGenTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1F9276C329F2229D00A5D8E8 /* XCRemoteSwiftPackageReference "SnapshotGen" */;
-			productName = SnapGenTesting;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */ = {
