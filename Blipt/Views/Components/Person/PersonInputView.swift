@@ -11,7 +11,10 @@ struct PersonInputView: View {
           TextField("Enter your name", text: $name)
               .textFieldStyle(RoundedBorderTextFieldStyle())
               .padding(.horizontal)
-          Button(action: { callback(name) }) {
+          Button(action: {
+            callback(name)
+            name = ""
+          }) {
               Image(systemName: "plus.circle.fill")
                   .font(.system(size: 24))
                   .foregroundColor(.blue)

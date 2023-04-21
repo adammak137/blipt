@@ -30,6 +30,8 @@
 		1FE9F33D29F1C6990025D8D4 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33C29F1C6990025D8D4 /* Price.swift */; };
 		1FE9F34229F1E6550025D8D4 /* FinalizedSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34129F1E6550025D8D4 /* FinalizedSplitView.swift */; };
 		1FE9F34429F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34329F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift */; };
+		1FE9F34629F207480025D8D4 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34529F207480025D8D4 /* Debt.swift */; };
+		1FE9F34829F2083B0025D8D4 /* DebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F34729F2083B0025D8D4 /* DebtView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		1FE9F33C29F1C6990025D8D4 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		1FE9F34129F1E6550025D8D4 /* FinalizedSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedSplitView.swift; sourceTree = "<group>"; };
 		1FE9F34329F1F3C80025D8D4 /* FinalizedSplitBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizedSplitBillViewModel.swift; sourceTree = "<group>"; };
+		1FE9F34529F207480025D8D4 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		1FE9F34729F2083B0025D8D4 /* DebtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 				1FE9F33829F1C17F0025D8D4 /* Receipt */,
 				1FE9F33729F1C1760025D8D4 /* Person */,
 				1FE9F32D29EF801A0025D8D4 /* AddItemForm.swift */,
+				1FE9F34729F2083B0025D8D4 /* DebtView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				1FD55E7629EDDBFE00E4DAAC /* Person.swift */,
 				1FD55E8129EE125B00E4DAAC /* ReceiptItem.swift */,
 				1FE9F33C29F1C6990025D8D4 /* Price.swift */,
+				1FE9F34529F207480025D8D4 /* Debt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -394,6 +400,8 @@
 				1FE9F32E29EF801A0025D8D4 /* AddItemForm.swift in Sources */,
 				1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */,
 				1FD55E7729EDDBFE00E4DAAC /* Person.swift in Sources */,
+				1FE9F34829F2083B0025D8D4 /* DebtView.swift in Sources */,
+				1FE9F34629F207480025D8D4 /* Debt.swift in Sources */,
 				1FD55E7429EDDB2500E4DAAC /* Plate.swift in Sources */,
 				1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */,
 				1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */,

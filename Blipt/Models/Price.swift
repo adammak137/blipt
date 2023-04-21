@@ -15,8 +15,19 @@ struct Price: Codable, Equatable, CustomStringConvertible {
 
 extension Price {
   static let zero = Price(amount: 0)
+  
+  static func from(_ value: Double) -> Price {
+    .init(amount: value)
+  }
+  
   static func +(lhs: Price, rhs: Price) -> Price {
-    return .init(amount: lhs.amount + rhs.amount)
+    .init(amount: lhs.amount + rhs.amount)
+  }
+  static func *(lhs: Price, rhs: Price) -> Price {
+    .init(amount: lhs.amount * rhs.amount)
+  }
+  static func /(lhs: Price, rhs: Price) -> Price {
+    .init(amount: lhs.amount / rhs.amount)
   }
 }
 

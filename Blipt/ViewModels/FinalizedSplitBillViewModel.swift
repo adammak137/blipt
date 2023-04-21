@@ -2,45 +2,46 @@ import Foundation
 
 class FinalizedSplitBillViewModel: ObservableObject {
   
-  @Published var totalTipAmount: String = ""
-  @Published var totalTaxAmount: String = ""
+  @Published var totalTipAmount: String = "" {
+    didSet { updateDebts() }
+  }
   
-  let split: [Person: [ReceiptItem]]
- 
+  @Published var totalTaxAmount: String = "" {
+    didSet { updateDebts() }
+  }
+  
+  @Published var debts: [Debt] = []
+  
+  private let split: [Person: [ReceiptItem]]
+  
   init(split: [Person: [ReceiptItem]]) {
     self.split = split
+    updateDebts()
   }
   
-  func subtotalCost(for person: Person) -> Price {
-    let subtotal = split[person]?.reduce(0.0, { $0 + $1.cost }) ?? 0.0
-    
-    return .init(amount: subtotal)
-  }
-  
-  func tipAmount(for person: Person) -> Price {
-    if let totalTip = Double(totalTipAmount),
-       let personTotal = split[person]?.reduce(0.0, { $0 + $1.cost }) {
-      let totalCost = split.values.flatMap({ $0 }).reduce(0.0, { $0 + $1.cost })
-      let tip = personTotal / totalCost * totalTip
-      return .init(amount: tip)
+  private func updateDebts() {
+    let allSubtotal: Price = split.values.map{ $0.total }.reduce(.zero, { $0 + $1 })
+    debts = split.map { person, items in
+      Debt(
+        person: person,
+        items: items,
+        tip: calculateAmount(amountStringValue: totalTipAmount, items: items, allSubtotal: allSubtotal),
+        tax: calculateAmount(amountStringValue: totalTaxAmount, items: items, allSubtotal: allSubtotal)
+      )
     }
-    return .zero
   }
   
-  func taxAmount(for person: Person) -> Price {
-    if let totalTax = Double(totalTaxAmount),
-       let personTotal = split[person]?.reduce(0.0, { $0 + $1.cost }) {
-      let totalCost = split.values.flatMap({ $0 }).reduce(0.0, { $0 + $1.cost })
-      let tax = (personTotal / totalCost * totalTax)
-      return .init(amount: tax)
-    }
-    return .zero
+  private func calculateAmount(amountStringValue: String, items: [ReceiptItem], allSubtotal: Price) -> Price {
+    guard let doubleValue = Double(amountStringValue) else { return .zero }
+    let price: Price = .from(doubleValue)
+    return items.total / allSubtotal * price
   }
-  
-  func grandTotal(for person: Person) -> Price {
-    return subtotalCost(for: person) + tipAmount(for: person) + taxAmount(for: person)
+}
+
+fileprivate extension Array where Element == ReceiptItem {
+  var total: Price {
+    .from(reduce(0.0, { $0 + $1.cost }))
   }
-  
 }
 
 // Stubbing
