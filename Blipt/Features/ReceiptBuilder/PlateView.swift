@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct PlateView: View {
+  
   let cost: Price
   
   var body: some View {

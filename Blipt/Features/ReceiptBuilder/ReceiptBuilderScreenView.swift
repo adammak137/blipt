@@ -5,6 +5,7 @@ struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
   
   let destination: ReceiptBuilderContentDestination
   @State var items: [Item]
+  @State private var currentName: String = ""
   @State private var currentCost: Price = .zero
   @State private var plateOffset: CGSize = .zero
   
@@ -48,11 +49,19 @@ struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
               }
               .onEnded { value in
                 if isOnTable(value.translation) && currentCost.amount > 0 {
-                  items.append(Item(name: "Item \(items.count)", cost: currentCost.amount))
+                  let defaultName = "Item \(items.count)"
+                  items.append(
+                    Item(
+                      name: currentName.isBlank ? defaultName : currentName,
+                      cost: currentCost.amount
+                    )
+                  )
                 }
                 plateOffset = .zero
               }
           )
+        TextField("Item name", text: $currentName)
+          .textFieldStyle(RoundedBorderTextFieldStyle())
         NumberPadView { button in
           handleButtonPress(button)
         }
