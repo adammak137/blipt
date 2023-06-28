@@ -48,7 +48,7 @@ extension View {
     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
   }
   
-  func snapshot() -> UIImage {
+  @MainActor func snapshot() -> UIImage {
     let controller = UIHostingController(rootView: self)
     let view = controller.view
     

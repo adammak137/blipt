@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI // Transferable
 import UniformTypeIdentifiers
 
-struct Item: Identifiable, Equatable, Codable {
+struct Item: Identifiable, Equatable, Codable, Hashable {
   var id: UUID = .init()
   let name: String
   var cost: Double { price.amount }

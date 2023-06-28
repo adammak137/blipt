@@ -1,7 +1,8 @@
 import Foundation
+import SwiftUI
 
-class DebtViewModel: ObservableObject {
-  
+class FinalizeDebtScreenViewModel: ObservableObject {
+
   @Published var totalTipAmount: String = "" {
     didSet { updateDebts() }
   }
@@ -23,7 +24,7 @@ class DebtViewModel: ObservableObject {
   
   @Published var debts: [Debt] = []
   
-  private let split: [Person: [Item]]
+  let split: [Person: [Item]]
   
   init(split: [Person: [Item]]) {
     self.split = split
@@ -56,12 +57,12 @@ fileprivate extension Array where Element == Item {
 }
 
 // Stubbing
-extension DebtViewModel {
+extension FinalizeDebtScreenViewModel {
   private convenience init() {
     let people: [Person] = .stub()
     let split: [Person: [Item]] = people.reduce(into: [:]) { $0[$1] = .stub() }
     self.init(split: split)
   }
   
-  static let stub: DebtViewModel = .init()
+  static let stub: FinalizeDebtScreenViewModel = .init()
 }

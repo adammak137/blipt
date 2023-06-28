@@ -1,17 +1,10 @@
 import SwiftUI
 
-struct ReceiptSplitterScreenView<Destination>: View where Destination : View {
+struct ReceiptSplitterScreenView : View {
   
-  typealias SplitBillContentDestination = ([Person: [Item]]) -> Destination
-  let destination: SplitBillContentDestination
-  
+  typealias OnSplitComplete = ([Person: [Item]]) -> ()
   @ObservedObject var viewModel: ReceiptSplitterViewModel
-  
-  init(viewModel: ReceiptSplitterViewModel,
-       @ViewBuilder destination: @escaping SplitBillContentDestination) {
-    self.viewModel = viewModel
-    self.destination = destination
-  }
+  let onSplitComplete: OnSplitComplete
   
   @ViewBuilder
   var listOfPeopleView: some View {
@@ -38,21 +31,17 @@ struct ReceiptSplitterScreenView<Destination>: View where Destination : View {
         }
       )
     } else {
-      NavigationLink {
-        destination(viewModel.items)
-      } label: {
-        Text("Next")
+      Button("Next") {
+        onSplitComplete(viewModel.items)
       }
     }
   }
   
   var body: some View {
-    NavigationStack {
-      VStack {
-        listOfPeopleView
-        Divider()
-        activeActionRequiredView
-      }
+    VStack {
+      listOfPeopleView
+      Divider()
+      activeActionRequiredView
     }
   }
   
@@ -78,11 +67,9 @@ struct ReceiptSplitterScreenView<Destination>: View where Destination : View {
 
 struct SplitBillScreenView_Previews: PreviewProvider {
   static var previews: some View {
-    ReceiptSplitterScreenView(viewModel: .stub) {
-      Text("Preview of next screen with content: \(String(describing: $0))")
+    ReceiptSplitterScreenView(viewModel: .stub) { _ in
     }
-    ReceiptSplitterScreenView(viewModel: .init(people: [Person(name: "Preview")], receipt: []))  {
-      Text("Preview of next screen with content: \(String(describing: $0))")
+    ReceiptSplitterScreenView(viewModel: .init(people: [Person(name: "Preview")], items: []))  { _ in
     }
   }
 }

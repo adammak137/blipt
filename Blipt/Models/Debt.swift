@@ -1,6 +1,6 @@
 import Foundation
 
-struct Debt {
+struct Debt: Hashable, Codable {
 
   let person: Person
   let items: [Item]

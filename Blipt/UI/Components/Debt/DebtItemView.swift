@@ -5,7 +5,7 @@ struct DebtItemView: View {
   
   var body: some View {
     Group {
-      Section(header: Text("\(debt.person.name)'s Items")) {
+      Section(header: Text("\(debt.person.name)'s Items").bold()) {
         ForEach(debt.items, id: \.id) { item in
           HStack {
             Text(item.name)

@@ -1,18 +1,14 @@
 import SwiftUI
 
-struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
-  typealias ReceiptBuilderContentDestination = ([Item]) -> Destination
+struct ReceiptBuilderScreenView: View {
+  typealias OnBuildComplete = ([Item]) -> ()
   
-  let destination: ReceiptBuilderContentDestination
   @State var items: [Item]
+  let onBuildComplete: OnBuildComplete
+  
   @State private var currentName: String = ""
   @State private var currentCost: Price = .zero
   @State private var plateOffset: CGSize = .zero
-  
-  init(items: [Item], @ViewBuilder destination: @escaping ReceiptBuilderContentDestination) {
-    self.items = items
-    self.destination = destination
-  }
   
   @ViewBuilder
   var tableButton: some View {
@@ -27,48 +23,43 @@ struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
   
   @ViewBuilder
   var nextScreenButton: some View {
-    NavigationLink {
-      destination(items)
-    } label: {
-      Text("Done")
-        .frame(maxWidth: .infinity)
+    Button("Done") {
+      onBuildComplete(items)
     }.buttonStyle(AppButtonStyle())
   }
   
   var body: some View {
-    NavigationStack {
-      VStack {
-        tableButton
-        Spacer()
-        PlateView(cost: currentCost)
-          .offset(plateOffset)
-          .gesture(
-            DragGesture()
-              .onChanged { value in
-                plateOffset = value.translation
-              }
-              .onEnded { value in
-                if isOnTable(value.translation) && currentCost.amount > 0 {
-                  let defaultName = "Item \(items.count)"
-                  items.append(
-                    Item(
-                      name: currentName.isBlank ? defaultName : currentName,
-                      cost: currentCost.amount
-                    )
+    VStack {
+      tableButton
+      Spacer()
+      PlateView(cost: currentCost)
+        .offset(plateOffset)
+        .gesture(
+          DragGesture()
+            .onChanged { value in
+              plateOffset = value.translation
+            }
+            .onEnded { value in
+              if isOnTable(value.translation) && currentCost.amount > 0 {
+                let defaultName = "Item \(items.count)"
+                items.append(
+                  Item(
+                    name: currentName.isBlank ? defaultName : currentName,
+                    cost: currentCost.amount
                   )
-                }
-                plateOffset = .zero
+                )
               }
-          )
-        TextField("Item name", text: $currentName)
-          .textFieldStyle(RoundedBorderTextFieldStyle())
-        NumberPadView { button in
-          handleButtonPress(button)
-        }
-        nextScreenButton
+              plateOffset = .zero
+            }
+        )
+      TextField("Item name", text: $currentName)
+        .textFieldStyle(RoundedBorderTextFieldStyle())
+      NumberPadView { button in
+        handleButtonPress(button)
       }
-      .padding()
+      nextScreenButton
     }
+    .padding()
   }
   
   func isOnTable(_ translation: CGSize) -> Bool {
@@ -90,8 +81,7 @@ struct ReceiptBuilderScreenView<Destination>: View where Destination : View {
 struct ReceiptBuilderView_Previews: PreviewProvider {
   static var previews: some View {
     ReceiptBuilderScreenView(
-      items: .stub(),
-      destination: { items in Text("Next Screen Sample with: \(items.count)") }
-    )
+      items: .stub()
+    ) { _ in }
   }
 }

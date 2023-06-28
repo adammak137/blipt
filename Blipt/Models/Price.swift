@@ -1,6 +1,6 @@
 import Foundation
 
-struct Price: Codable, Equatable, CustomStringConvertible {  
+struct Price: Codable, Equatable, CustomStringConvertible, Hashable {  
   var amount: Double
   
   var description: String {

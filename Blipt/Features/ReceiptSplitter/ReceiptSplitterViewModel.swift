@@ -1,12 +1,13 @@
 import Foundation
+//import Observation
 
 class ReceiptSplitterViewModel: ObservableObject {
   @Published var items: [Person: [Item]]
   @Published var receipt: [Item]
   
-  init(people: [Person], receipt: [Item]) {
+  init(people: [Person], items: [Item]) {
     self.items = people.reduce(into: [Person: [Item]]()) { $0[$1] = [] }
-    self.receipt = receipt
+    self.receipt = items
   }
   
   func add(person: Person) {
@@ -40,7 +41,7 @@ class ReceiptSplitterViewModel: ObservableObject {
 extension ReceiptSplitterViewModel {
   private convenience init() {
     let people: [Person] = .stub()
-    self.init(people: people, receipt: .stub())
+    self.init(people: people, items: .stub())
     items = people.reduce(into: [Person: [Item]]()) { result, person in
       result[person] = .stub()
     }
