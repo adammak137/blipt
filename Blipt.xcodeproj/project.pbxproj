@@ -17,6 +17,7 @@
 		1F9276C229F21E9F00A5D8E8 /* PlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9276C129F21E9F00A5D8E8 /* PlateView.swift */; };
 		1FB31C582A4B36FB0025DC7E /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB31C572A4B36FB0025DC7E /* Receipt.swift */; };
 		1FB31C5B2A4C6A680025DC7E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB31C5A2A4C6A680025DC7E /* RootView.swift */; };
+		1FB31C5D2A4C8AC00025DC7E /* NavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB31C5C2A4C8AC00025DC7E /* NavigationStore.swift */; };
 		1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */; };
 		1FD55E4329EDA64500E4DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4229EDA64500E4DAAC /* Assets.xcassets */; };
 		1FD55E4629EDA64500E4DAAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD55E4529EDA64500E4DAAC /* Preview Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		1FD55E7B29EDE71300E4DAAC /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7A29EDE71300E4DAAC /* ReceiptView.swift */; };
 		1FD55E8029EE120800E4DAAC /* ReceiptItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */; };
 		1FD55E8529EE193F00E4DAAC /* ReceiptSplitterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD55E8429EE193F00E4DAAC /* ReceiptSplitterViewModel.swift */; };
+		1FDFB91C2A6C43CC008B1642 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFB91B2A6C43CC008B1642 /* KeyboardResponder.swift */; };
 		1FE9F33029F18FD40025D8D4 /* ReceiptBuilderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */; };
 		1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */; };
 		1FE9F33B29F1C30E0025D8D4 /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */; };
@@ -66,6 +68,7 @@
 		1F9276C129F21E9F00A5D8E8 /* PlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateView.swift; sourceTree = "<group>"; };
 		1FB31C572A4B36FB0025DC7E /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
 		1FB31C5A2A4C6A680025DC7E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1FB31C5C2A4C8AC00025DC7E /* NavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStore.swift; sourceTree = "<group>"; };
 		1FD55E3B29EDA64300E4DAAC /* Blipt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blipt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD55E3E29EDA64300E4DAAC /* BliptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliptApp.swift; sourceTree = "<group>"; };
 		1FD55E4229EDA64500E4DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		1FD55E7C29EDF45800E4DAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FD55E7F29EE120800E4DAAC /* ReceiptItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemView.swift; sourceTree = "<group>"; };
 		1FD55E8429EE193F00E4DAAC /* ReceiptSplitterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSplitterViewModel.swift; sourceTree = "<group>"; };
+		1FDFB91B2A6C43CC008B1642 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		1FE9F32F29F18FD40025D8D4 /* ReceiptBuilderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptBuilderScreenView.swift; sourceTree = "<group>"; };
 		1FE9F33529F1BAA60025D8D4 /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
 		1FE9F33A29F1C30E0025D8D4 /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				1FD55E4229EDA64500E4DAAC /* Assets.xcassets */,
 				1FD55E4929EDA64500E4DAAC /* Blipt.xcdatamodeld */,
 				1FD55E4429EDA64500E4DAAC /* Preview Content */,
+				1FB31C5C2A4C8AC00025DC7E /* NavigationStore.swift */,
 			);
 			path = Blipt;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				1F4363FA29F21C8A00E5E021 /* Extensions.swift */,
+				1FDFB91B2A6C43CC008B1642 /* KeyboardResponder.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				1F43640329F21C8B00E5E021 /* Person.swift in Sources */,
 				1FB31C5B2A4C6A680025DC7E /* RootView.swift in Sources */,
 				1F9276BE29F21DE500A5D8E8 /* NumberPadView.swift in Sources */,
+				1FB31C5D2A4C8AC00025DC7E /* NavigationStore.swift in Sources */,
 				1F9276C229F21E9F00A5D8E8 /* PlateView.swift in Sources */,
 				1FD55E4B29EDA64500E4DAAC /* Blipt.xcdatamodeld in Sources */,
 				1FD55E7929EDDE3A00E4DAAC /* PersonCardView.swift in Sources */,
@@ -463,6 +470,7 @@
 				1FD55E3F29EDA64300E4DAAC /* BliptApp.swift in Sources */,
 				1FB31C582A4B36FB0025DC7E /* Receipt.swift in Sources */,
 				1FE9F33629F1BAA60025D8D4 /* NameInputView.swift in Sources */,
+				1FDFB91C2A6C43CC008B1642 /* KeyboardResponder.swift in Sources */,
 				1FE9F34229F1E6550025D8D4 /* FinalizeDebtScreenView.swift in Sources */,
 				1FE9F34429F1F3C80025D8D4 /* DebtViewModel.swift in Sources */,
 			);
@@ -621,8 +629,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Blipt/Preview Content\"";
 				DEVELOPMENT_TEAM = 889ZT45J94;
 				ENABLE_PREVIEWS = YES;
@@ -640,6 +649,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.Blipt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,8 +662,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Blipt/Preview Content\"";
 				DEVELOPMENT_TEAM = 889ZT45J94;
 				ENABLE_PREVIEWS = YES;
@@ -671,6 +682,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.baksha.Blipt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

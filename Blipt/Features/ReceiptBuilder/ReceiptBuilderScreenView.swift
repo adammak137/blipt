@@ -10,6 +10,10 @@ struct ReceiptBuilderScreenView: View {
   @State private var currentCost: Price = .zero
   @State private var plateOffset: CGSize = .zero
   
+  @EnvironmentObject
+  private var keyboardResponder: KeyboardResponder
+
+  
   @ViewBuilder
   var tableButton: some View {
     NavigationLink {

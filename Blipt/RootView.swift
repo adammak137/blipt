@@ -7,7 +7,6 @@ enum Route: Hashable {
   case finalize(split: [Person: [Item]])
   case view(debts: [Debt])
   
-  // Implementing Equatable conformance
   static func ==(lhs: Route, rhs: Route) -> Bool {
     switch (lhs, rhs) {
     case let (.build(items: lhsItems), .build(items: rhsItems)):
@@ -22,30 +21,11 @@ enum Route: Hashable {
       return false
     }
   }
-  
-  // Implementing Hashable conformance
-  func hash(into hasher: inout Hasher) {
-    switch self {
-    case let .build(items):
-      hasher.combine(0)
-      hasher.combine(items)
-    case let .split(people, items):
-      hasher.combine(1)
-      hasher.combine(people)
-      hasher.combine(items)
-    case let .finalize(split):
-      hasher.combine(2)
-      hasher.combine(split)
-    case let .view(debts):
-      hasher.combine(3)
-      hasher.combine(debts)
-    }
-  }
 }
 
 struct RootView: View {
   @State
-  var path = NavigationPath() //: [Route] = []
+  var path: [Route] = []
   
   var body: some View {
     NavigationStack(path: $path) {
